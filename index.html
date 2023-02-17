@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 이서윤체 폰트 적용을 위한 코드 */
+      @font-face {
+        font-family: "LeeSeoyun";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      /* body태그 자체에 css 요소 부여 */
+body {
+	font-family: "LeeSeoyun";
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	background-image: url("./background.png");
+}
+
+.container{
+    width: 390px;
+	background-color: #ff9d73;
+	height: 100%;
+}
+
+.photos {
+    margin-top:30px;
+}
+
+.photo-frame {
+    background-color: white;
+    margin: 15px 20px;
+    height:200px;
+
+    background-size: cover;
+    height: 300px;
+    position: relative;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.f-title {
+    color:white;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#imige1{
+    background-image: url('./KakaoTalk_Image_2023-02-17-14-02-51.jpeg');
+}
+#imige2{
+    background-image: url('./IMG_4951.JPG');
+}
+#imige3{
+    background-image: url('./스크린샷\ 2022-10-29\ 오전\ 12.43.17.png');
+}
+#imige4{
+    background-image: url('./ì´ë¦\ ìë\ ì´¬ì7555\ ë³µì¬2.jpg');
+}
+
+.photo_description {
+    color: white;
+    background-color: palevioletred;
+
+    width: fit-content;
+    padding: 0 20px;
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+
+    transform: translate(-50);
+    left: 50%;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+}
+
+.showText {
+    opacity: 0;
+}
+
+.hideText {
+    opacity: 1;
+    transition: opacity 0.5s linear;
+}
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="photos">
+        <div id="imige1" class="photo-frame">
+            <span id="desc1" class="photo_description">
+                "오징유하이 :)"
+            </span>
+        </div>
+        <div id="imige2" class="photo-frame">
+            <span id="desc1" class="photo_description">
+                "므..!"
+            </span>
+        </div>
+        <div id="imige3" class="photo-frame">
+            <span id="desc1" class="photo_description">
+                "민하 프로필 사진"
+            </span>
+        </div>
+        <div class="photo-frame">
+            <iframe
+            src="https://www.youtube.com/embed/YNc56BkAz_I"
+            frameborder="0"
+            class="video"
+            ></iframe>
+    </div>
+        </div>
+    <div class="footer">
+        <p class="f-title">HAPPY LUNCH TIME</p>
+        <p class="f-date">2023.02.13</p>
+</div>
+  </div>
+</body>
+</html>
